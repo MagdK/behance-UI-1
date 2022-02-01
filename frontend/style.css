@@ -35,48 +35,132 @@ select {
 /* RESET OVER */
 
 body {
-    background-color: #022cc9;
-    height: 100%;
-    font-family: 'Maven Pro', sans-serif;
+  background-color: #072CC9;
+  font-family: 'Maven Pro', sans-serif;
+  display: flex;
+  flex-flow: column
 }
 
-/* Style the navbar */
-#navbar {
-    overflow: hidden;
-    background-color: #333;
-    text-transform: uppercase;
-  }
-  
-  /* Navbar links */
-  #navbar a {
-    float: left;
-    display: block;
-    text-align: center;
-    padding: 14px;
-  }
-  
-  /* Page content */
-  .content {
-    padding: 16px;
-  }
-  
-  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
-  .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-  
-  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-  .sticky + .content {
-    padding-top: 60px;
-  }
+.flex-wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  padding: 0 120px 0 120px;
+}
 
-  #column1 {
-    width: 50%;
-  }
+.column1 {
+  width: 40%;
+  text-align: right;
+  color: white;
+  justify-content: center;
+  text-align: left;
+  padding-right: 60px;
+}
 
-  #column2 {
-    width: 50%;
-  }
+.column2 {
+  width: 60%;
+  justify-content: center;
+}
 
+.devices-illustration {
+  width: 100%;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 55px;
+  line-height: 60px;
+  letter-spacing: -7;
+  padding-bottom: 30px;
+}
+
+p {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 200;
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+
+.flex-wrap .column1 .highlighted-word {
+  color: #02DAD2;
+}
+
+header,
+.social {
+  padding: 80px 120px 0 120px;
+}
+
+.topnav a {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: white;
+}
+
+.topnav a {
+  padding-right: 60px;
+}
+
+.topnav a:hover {  
+  color: #02DAD2;
+}
+
+.topnav i {
+  text-align: right;
+  color: white;
+  right: 0;
+}
+
+.topnav i:hover {
+  color: #02DAD2;
+  cursor: pointer;
+}
+
+button {
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.primary-button {
+  height: 44px;
+  width: 180px;
+  background-color: #7A5AF5;
+}
+
+.primary-button:hover {
+  background-color: #6742f4;
+}
+
+.secondary-button {
+  height: 44px;
+  width: 180px;
+  background-color: transparent;
+  border: 3px solid #02DAD2;
+  margin-right: 20px;
+}
+
+.secondary-button:hover {
+  background-color: #02DAD2;
+}
+
+.topnav .active {
+  color: #02DAD2;
+}
+
+.topnav .menu-icon {
+  right: 0;
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: right;
+}
+
+footer .social {
+  float: left;
+  color: white;
+}

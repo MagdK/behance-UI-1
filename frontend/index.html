@@ -1,43 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;800&display=swap" rel="stylesheet">
-	<title>This is FRONTEND</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="style.css">
+	<title>Behance UI 1</title>
 </head>
+
 <body>
 	<header>
-		<div id="navbar">
-			<a href="#home">Home</a>
-			<a href="#news">Price</a>
+		<div class="topnav">
+			<a class="active" href="#home">Home</a>
+			<a href="#price">Price</a>
 			<a href="#blog">Blog</a>
 			<a href="#contact">Contact</a>
-			<img src="" alt="Hamburger menu">
+			<div class="topnav-right">
+				<i class="material-icons" class="menu-icon" style="font-size:18px;">menu</i>
+			</div>
 		</div>
 	</header>
+
 	<body>
-		<div id="column1">
-			<h1>Mobile app development</h1>
-			<p>Mobile app development is the act or process by which a mobile app is developed for mobile devices, such as personal digital assistants, enterprise digital assistants or mobile phones.</p>
-			<button>
-				<span>Log in</span>
-			</button>
-			<button>
-				<span>Register</span>
-			</button>
-		</div>
-		<div id="column2">
-			<img src="behance_image.png" alt="A laptop and mobile illustration with leaves behind them">
-		</div>
+		<section class="flex-wrap">
+			<div class="column1">
+				<h1>Mobile app <span class="highlighted-word">development</span></h1>
+				<p>Mobile app development is the act or process by which a mobile app is developed for mobile devices,
+					such as personal digital assistants, enterprise digital assistants or mobile phones.</p>
+				<button class="secondary-button">
+					<span>Log in</span>
+				</button>
+				<button class="primary-button">
+					<span>Register</span>
+				</button>
+			</div>
+			<div class="column2">
+				<img src="behance_image.png" class="devices-illustration"
+					alt="A laptop and mobile illustration with leaves behind them">
+			</div>
+		</section>
+		<footer>
+			<div class="social">
+				<i class="material-icons" class="menu-icon" style="font-size:40px;">facebook</i>
+				<i class="material-icons" class="menu-icon" style="font-size:40px;">youtube</i>
+				<i class="material-icons" class="menu-icon" style="font-size:40px;">twitter</i>
+				<i class="material-icons" class="menu-icon" style="font-size:40px;">share</i>
+			</div>
+		</footer>
 	</body>
-	<footer>
-		<div id="social">
-		</div>
-	</footer>
-	<div id="root"></div>
-</body>
+
 </html>
