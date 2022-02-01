@@ -37,12 +37,14 @@ select {
 body {
     background-color: #022cc9;
     height: 100%;
+    font-family: 'Maven Pro', sans-serif;
 }
 
 /* Style the navbar */
 #navbar {
     overflow: hidden;
     background-color: #333;
+    text-transform: uppercase;
   }
   
   /* Navbar links */
