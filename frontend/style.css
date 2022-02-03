@@ -41,6 +41,63 @@ body {
   font-family: 'Maven Pro', sans-serif;
 }
 
+h1 {
+  font-size: 55px;
+  line-height: 60px;
+  text-transform: uppercase;
+  letter-spacing: -7;
+  padding-bottom: 30px;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 200;
+  line-height: 20px;
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+
+header {
+  padding: 80px 120px 0 120px;
+}
+
+.topnav a {
+  font-size: 18px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: white;
+  padding-right: 60px;
+}
+
+.topnav a:hover {  
+  color: #02DAD2;
+}
+
+/* Burger menu icon in top nav */
+.topnav i {
+  text-align: right;
+  color: white;
+  right: 0;
+}
+
+.topnav i:hover {
+  color: #02DAD2;
+  cursor: pointer;
+}
+
+.topnav .active {
+  color: #02DAD2;
+}
+
+.topnav .menu-icon {
+  right: 0;
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: right;
+}
+
 .flex-wrap {
   display: flex;
   flex-direction: row;
@@ -54,75 +111,26 @@ body {
   width: 40%;
   text-align: right;
   color: white;
-  justify-content: center;
   text-align: left;
   padding-right: 60px;
-}
-
-.column2 {
-  width: 60%;
-  justify-content: center;
-}
-
-.devices-illustration {
-  width: 100%;
-}
-
-h1 {
-  text-transform: uppercase;
-  font-size: 55px;
-  line-height: 60px;
-  letter-spacing: -7;
-  padding-bottom: 30px;
-}
-
-p {
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 200;
-  padding-top: 30px;
-  padding-bottom: 60px;
 }
 
 .flex-wrap .column1 .highlighted-word {
   color: #02DAD2;
 }
 
-header,
-.social {
-  padding: 80px 120px 0 120px;
+.column2 {
+  width: 60%;
 }
 
-.topnav a {
-  font-size: 18px;
-  text-transform: uppercase;
-  font-weight: 800;
-  color: white;
-}
-
-.topnav a {
-  padding-right: 60px;
-}
-
-.topnav a:hover {  
-  color: #02DAD2;
-}
-
-.topnav i {
-  text-align: right;
-  color: white;
-  right: 0;
-}
-
-.topnav i:hover {
-  color: #02DAD2;
-  cursor: pointer;
+.devices-illustration {
+  width: 100%;
 }
 
 button {
-  text-transform: uppercase;
   font-size: 22px;
   font-weight: 500;
+  text-transform: uppercase;
 }
 
 .primary-button {
@@ -145,22 +153,4 @@ button {
 
 .secondary-button:hover {
   background-color: #02DAD2;
-}
-
-.topnav .active {
-  color: #02DAD2;
-}
-
-.topnav .menu-icon {
-  right: 0;
-}
-
-/* Right-aligned section inside the top navigation */
-.topnav-right {
-  float: right;
-}
-
-footer .social {
-  float: left;
-  color: white;
 }
