@@ -1,5 +1,5 @@
 * {
-    margin: 0; 
+  margin: 0; 
 	padding: 0; 
 	border: 0; 
 	outline: none; 
@@ -36,7 +36,7 @@ select {
 
 body {
   display: flex;
-  flex-flow: column
+  flex-flow: column;
   background-color: #072CC9;
   font-family: 'Maven Pro', sans-serif;
 }
