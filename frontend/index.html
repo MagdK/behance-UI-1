@@ -9,41 +9,54 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<script src="script.js"></script>
 	<link rel="stylesheet" href="style.css">
 	<title>Behance UI 1</title>
 </head>
 
 <body>
-	<header>
-		<div class="topnav">
-			<a class="active" href="#home">Home</a>
-			<a href="#price">Price</a>
-			<a href="#blog">Blog</a>
-			<a href="#contact">Contact</a>
+	<div id="root">
+		<header>
+			<div class="topnav-left">
+				<a class="active" href="#home">Home</a>
+				<a href="#price">Price</a>
+				<a href="#blog">Blog</a>
+				<a href="#contact">Contact</a>
+			</div>
 			<div class="topnav-right">
-				<i class="material-icons" class="menu-icon" style="font-size:18px;">menu</i>
+				<i class="material-icons">menu</i>
 			</div>
-		</div>
-	</header>
-	<main>
-		<section class="flex-wrap">
-			<div class="column1">
-				<h1>Mobile app <span class="highlighted-word">development</span></h1>
-				<p>Mobile app development is the act or process by which a mobile app is developed for mobile devices,
-					such as personal digital assistants, enterprise digital assistants or mobile phones.</p>
-				<button class="secondary-button">
-					<span>Log in</span>
-				</button>
-				<button class="primary-button">
-					<span>Register</span>
-				</button>
-			</div>
-			<div class="column2">
-				<img src="behance_image.png" class="devices-illustration"
-					alt="A laptop and mobile illustration with leaves behind them">
-			</div>
+		</header>
+		<section id="home">
+			<article class="leader">
+				<div class="column1">
+					<h1>Mobile app <span class="highlighted-word">development</span></h1>
+					<p>Mobile app development is the act or process by which a mobile app is developed for mobile devices,
+						such as personal digital assistants, enterprise digital assistants or mobile phones.</p>
+					<button class="secondary-button">
+						<span>Log in</span>
+					</button>
+					<button class="primary-button">
+						<span>Register</span>
+					</button>
+				</div>
+				<div class="column2">
+					<img src="assets/behance_image.png" class="devices-illustration"
+						alt="A laptop and mobile illustration with leaves behind them">
+				</div>
+			</article>
+			<aside class="social-icons">
+				<span class="icon" class="icon-facebook" role="img" src="assets/icon_facebook.png"></span>
+				<span class="icon" class="icon-youtube" role="img" rc="assets/icon_youtube.png"></span>
+				<span class="icon" class="icon-twitter" role="img" rc="assets/icon_twitter.png"></span>
+				<span class="icon" class="icon-share" role="img" rc="assets/icon_share-black-solid-social-symbol.png"></span>
+			</aside>
 		</section>
-	</main>
-	<footer></footer>
+		<section id="price"></section>
+		<section id="blog"></section>
+		<section id="contact"></section>
+	</div>
+	<footer>
+	</footer>
 </body>
 </html>

@@ -34,12 +34,43 @@ select {
 }
 /* RESET OVER */
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
-  display: flex;
-  flex-flow: column;
-  background-color: #072CC9;
   font-family: 'Maven Pro', sans-serif;
 }
+
+header {
+  position: fixed;
+	left: 0;
+	top: 0px;
+	width: 100%;
+	height: 120px;
+	z-index: 99;
+  padding: 80px 120px 0 120px;
+  background-color: #072CC9;
+}
+
+section {
+  min-height: 100vh;
+}
+
+section#home, 
+section#blog {
+  background: #072CC9;
+}
+
+section#price,
+section#contact {
+  background-color: #294E9C;
+}
+
+/* section #home {
+  display: flex;
+  flex-flow: column;
+} */
 
 h1 {
   font-size: 55px;
@@ -57,80 +88,14 @@ p {
   padding-bottom: 60px;
 }
 
-header {
-  padding: 80px 120px 0 120px;
-}
-
-.topnav a {
-  font-size: 18px;
-  font-weight: 800;
-  text-transform: uppercase;
-  color: white;
-  padding-right: 60px;
-}
-
-.topnav a:hover {  
-  color: #02DAD2;
-}
-
-/* Burger menu icon in top nav */
-.topnav i {
-  text-align: right;
-  color: white;
-  right: 0;
-}
-
-.topnav i:hover {
-  color: #02DAD2;
-  cursor: pointer;
-}
-
-.topnav .active {
-  color: #02DAD2;
-}
-
-.topnav .menu-icon {
-  right: 0;
-}
-
-/* Right-aligned section inside the top navigation */
-.topnav-right {
-  float: right;
-}
-
-.flex-wrap {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  height: 80vh;
-  padding: 0 120px 0 120px;
-}
-
-.column1 {
-  width: 40%;
-  text-align: right;
-  color: white;
-  text-align: left;
-  padding-right: 60px;
-}
-
-.flex-wrap .column1 .highlighted-word {
-  color: #02DAD2;
-}
-
-.column2 {
-  width: 60%;
-}
-
-.devices-illustration {
-  width: 100%;
-}
-
 button {
   font-size: 22px;
   font-weight: 500;
   text-transform: uppercase;
+  min-width: 120px;
+  max-width: 320px;
+  margin-top: 20px;
+  cursor: pointer;
 }
 
 .primary-button {
@@ -153,4 +118,97 @@ button {
 
 .secondary-button:hover {
   background-color: #02DAD2;
+}
+
+.topnav-left {
+  display: inline;
+  float: left;
+  vertical-align: middle;
+}
+
+.topnav-left a {
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: white;
+  padding-right: 60px;
+  margin-top: 10px;
+}
+
+.topnav-left a:hover {  
+  color: #02DAD2;
+  cursor: pointer;
+}
+
+.topnav-left a.active {
+  color: #02DAD2;
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  display: inline;
+  float: right;
+  right: 0;
+}
+
+.topnav-right i {
+  color: white;
+  font-size: 40px;
+}
+
+.topnav-right i:hover {
+  color: #02DAD2;
+  cursor: pointer;
+}
+
+.leader {
+  /* display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; */
+  max-width: 100%;
+  height: 70vh;
+  padding: 200px 120px 0 120px;
+}
+
+.column1 {
+  float: left;
+  width: 40%;
+  text-align: right;
+  color: white;
+  text-align: left;
+  padding-right: 60px;
+}
+
+#home .column1 .highlighted-word {
+  color: #02DAD2;
+}
+
+.column2 {
+  float: left;
+  width: 60%;
+  padding-left: 40px;
+}
+
+.devices-illustration {
+  width: 100%;
+}
+
+aside.social-icons {
+  min-width: none;
+  min-height: 10vh;
+  filter: invert(100%);
+  padding: 0px 120px 0 120px;
+}
+
+/* .social-icons.icon {
+  bottom: 0px;
+  width: 24px !important;
+  height: 24px !important;
+} */
+
+span.icon-facebook {
+  width: 40px;
+  height: 40px;
 }
