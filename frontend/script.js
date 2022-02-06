@@ -1,43 +1,48 @@
-function loadEvent(){
+function clicked(aLink) {
+    console.log(aLink.target)
 
-    const listOfSectionElements = document.querySelectorAll(".topnav-left a")
-    console.log(listOfSectionElements);
-}
-window.addEventListener("load", loadEvent)
-
-
-//
-function posY(elm) {
-    var test = elm, top = 0;
-
-    while(!!test && test.tagName.toLowerCase() !== "body") {
-        top += test.offsetTop;
-        test = test.offsetParent;
-    }
-
-    return top;
+    // 1. levesszuk az "active" class
+    let links = document.querySelectorAll("header a")
+for (let link of links) {
+    link.classList.remove("active")
 }
 
-function viewPortHeight() {
-    var de = document.documentElement;
-
-    if(!!window.innerWidth)
-    { return window.innerHeight; }
-    else if( de && !isNaN(de.clientHeight) )
-    { return de.clientHeight; }
-    
-    return 0;
+    // 2. Add "active" class to clicked element
+    aLink.target.classList.add("active")
 }
 
-function scrollY() {
-    if( window.pageYOffset ) { return window.pageYOffset; }
-    return Math.max(document.documentElement.scrollTop, document.body.scrollTop);
+let links = document.querySelectorAll("header a")
+for (let link of links) {
+    link.addEventListener('click', clicked)
 }
 
-function checkvisible( elm ) {
-    var vpH = viewPortHeight(), // Viewport Height
-        st = scrollY(), // Scroll Top
-        y = posY(elm);
-    
-    return (y > (vpH + st));
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Variables
+var x = 'Magda'
+let xx = 'Magda'
+const xxx = 'Effi'
+
+// Variables with complex data structures
+let numbers = [1, 2, 3]
+let y = {"name": "Effi", "age": 8}
+let yy = {"name": "Effi", "age": 8, "favouriteNumbers": numbers}
+
+// Functions
+function functionName() { }
+
+// Loops
+for (let i = 0; i < 10; i++)  { }
+let manyItems = ["one", "two"]
+for (let item of manyItems) { }
