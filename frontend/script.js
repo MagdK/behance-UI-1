@@ -1,11 +1,11 @@
 function clicked(aLink) {
-    console.log(aLink.target)
+    // console.log(aLink.target)
 
     // 1. levesszuk az "active" class
     let links = document.querySelectorAll("header a")
-for (let link of links) {
-    link.classList.remove("active")
-}
+    for (let link of links) {
+        link.classList.remove("active")
+    }
 
     // 2. Add "active" class to clicked element
     aLink.target.classList.add("active")
