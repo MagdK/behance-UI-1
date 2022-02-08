@@ -32,7 +32,7 @@ select {
 	appearance: none !important; 
 	border-radius: 0; 
 }
-/* RESET OVER */
+/* CSS RESET OVER */
 
 /* || GENERAL STYLES */
 
@@ -42,6 +42,7 @@ html {
 
 body {
   font-family: 'Maven Pro', sans-serif;
+  background-color: #072CC9;
 }
 
 h1 {
@@ -121,24 +122,25 @@ header {
   color: white;
   padding-right: 60px;
   margin-top: 10px;
+  cursor: pointer;
 }
 
 .topnav-left a:hover {  
   color: #02DAD2;
-  cursor: pointer;
 }
 
 .topnav-left a.active {
   color: #02DAD2;
 }
 
-/* Right-aligned section inside the top navigation */
+/* Right-aligned section inside the top navigation (burger menu) */
 .topnav-right {
   display: inline;
   float: right;
   right: 0;
 }
 
+/* Burger menu */
 .topnav-right i {
   color: white;
   font-size: 40px;
@@ -168,11 +170,16 @@ section#contact {
   flex-direction: row;
   align-items: center;
   justify-content: center; */
-  height: 70vh;
-  margin: 120px 0;
-  padding-top: 150px;
+  height: 70%;
+  margin: 200px 0;
+  padding-top: 100px;
   background-color: #072CC9;
   text-align: center;
+}
+
+.column1,
+.column2 {
+  height: 500px;
 }
 
 .column1 {
@@ -217,10 +224,20 @@ button.carousel-indicator-1 {
 aside.social-icons {
   min-width: none;
   min-height: 60px;
-  filter: invert(100%);
+  color: #fff;
   padding: 0px 120px;
+  bottom: 0;
 }
 
-aside.social-icons i {
-  min-height: 200px;
+aside.social-icons i.fab,
+aside.social-icons i.fas {
+  font-size: 40px;
+  padding: 15px;
+  cursor: pointer;
+}
+
+aside.social-icons i.fab:hover,
+aside.social-icons i.fas:hover {
+  color: #02DAD2;
+  filter: none;
 }

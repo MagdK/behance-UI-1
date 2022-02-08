@@ -1,7 +1,7 @@
 function clicked(aLink) {
     // console.log(aLink.target)
 
-    // 1. levesszuk az "active" class
+    // 1. Remove "active" class
     let links = document.querySelectorAll("header a")
     for (let link of links) {
         link.classList.remove("active")
@@ -29,20 +29,20 @@ for (let link of links) {
 
 
 
-// Variables
-var x = 'Magda'
-let xx = 'Magda'
-const xxx = 'Effi'
+// // Variables
+// var x = 'Magda'
+// let xx = 'Magda'
+// const xxx = 'Effi'
 
-// Variables with complex data structures
-let numbers = [1, 2, 3]
-let y = {"name": "Effi", "age": 8}
-let yy = {"name": "Effi", "age": 8, "favouriteNumbers": numbers}
+// // Variables with complex data structures
+// let numbers = [1, 2, 3]
+// let y = {"name": "Effi", "age": 8}
+// let yy = {"name": "Effi", "age": 8, "favouriteNumbers": numbers}
 
-// Functions
-function functionName() { }
+// // Functions
+// function functionName() { }
 
-// Loops
-for (let i = 0; i < 10; i++)  { }
-let manyItems = ["one", "two"]
-for (let item of manyItems) { }
+// // Loops
+// for (let i = 0; i < 10; i++)  { }
+// let manyItems = ["one", "two"]
+// for (let item of manyItems) { }
